@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokeApi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/pokemonType.css">
+    <link rel="stylesheet" href="styles/pokemon.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header id="header">
+        <form action="" id="form-pokemon">
+            <input type="text" placeholder="pesquisar pokemon" id="search-pokemon">
+            <button id="botao-pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <p id="erro"></p>
+        
+    </header>
+    <main>
+        <section id="lista-pokemon">
+            <!-- <div class="pokemon-container">
+                <p class="pokemon-nome"></p>
+                <img class="pokemon-sprite" src="" alt="">
+                <p>tipo:</p>
+                <div id="tipos"></div>
+            </div> -->
+        </section>
+        <section class="botoes-page">
+            <p><span id="pageAtual">1</span> de <span id="limitePage">58</span></p>
+            <button class="botao-page " id="retroceder"><i class="fa-solid fa-circle-arrow-left"></i></button>
+            <button class="botao-page " id="avancar"><i class="fa-solid fa-circle-arrow-right"></i></button>
+        </section>
+        <button id="botao-voltar" class="hidden">voltar<i class="fa-solid fa-share-from-square"></i></button>
+    </main>
+    <script src="app/main.js"></script>
+    <script src="app/criaElementoPokemon.js"></script>
+    <script src="app/avancaPage.js"></script>
+    <script src="app/pokemonForm.js"></script>
+</body>
